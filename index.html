@@ -15,6 +15,22 @@
     <p>City University Malaysia</p>
 </header>
 
+<div class="lecturer-scroll-wrapper">
+
+    <button id="showAllBtn" class="show-all-btn">Show All</button>
+
+    <button class="scroll-btn left" onclick="scrollLecturers(-200)">◀</button>
+
+    <div class="lecturer-list" id="lecturerList"></div>
+
+    <button class="scroll-btn right" onclick="scrollLecturers(200)">▶</button>
+</div>
+
+<div class="lecturer-list" id="lecturerList">
+    <!-- Lecturer items will be injected here -->
+</div>
+
+
 <main>
     <div id="subject-container" class="card-container">
         <!-- Cards will be injected here -->
@@ -27,6 +43,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/lecturers.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
