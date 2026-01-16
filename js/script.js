@@ -177,8 +177,12 @@ Papa.parse(CSV_URL, {
             card.innerHTML = `
                 ${isToday ? `<span class="today-badge">TODAY</span>` : ""}
                 <h2>${row["Subject code"]} - ${row["Subject Name"]}</h2>
+
+                <div class="class-code-badge">
+                    ${row["Class Code"]}
+                </div>
+
                 <p><strong>Lecturer:</strong> ${row["Lecturer Name"]}</p>
-                <p><strong>Class Code:</strong> ${row["Class Code"]}</p>
                 <p><strong>Day:</strong> ${row["Day"]}</p>
                 <p><strong>Time:</strong> ${row["Class Time"]}</p>
                 <p><strong>Location:</strong> ${row["Class Location"]}</p>

@@ -237,6 +237,17 @@ main {
     margin-bottom: 0.4rem;
 }
 
+.class-code-badge {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin: 6px 0 10px 0;
+    letter-spacing: 0.5px;
+}
 
 footer {
     text-align: center;
