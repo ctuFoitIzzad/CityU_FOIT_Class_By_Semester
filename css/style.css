@@ -14,7 +14,7 @@ header {
     color: white;
     text-align: center;
     padding: 1.5rem 1rem;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -28,6 +28,13 @@ header p {
     font-size: 0.9rem;
 }
 
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+
 .show-all-btn {
     opacity: 0.6;
 }
@@ -36,17 +43,24 @@ header p {
     opacity: 1;
 }
 
+.lecturer-section {
+    margin-bottom: 24px;
+}
 
 .lecturer-list {
     display: flex;
-    gap: 20px;
+    gap: 12px;
     overflow-x: auto;          /* ✅ horizontal scroll */
     padding: 16px 24px;
-    margin-bottom: 24px;
+    margin-bottom: 5px;
     scroll-behavior: smooth;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
 }
 
 .lecturer-list::-webkit-scrollbar {
+    display: none;
     height: 6px;
 }
 
@@ -64,6 +78,7 @@ header p {
     width: 120px;   
     text-align: center;  
     flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .lecturer img {
@@ -82,7 +97,7 @@ header p {
     display: -webkit-box;
     -webkit-line-clamp: 2;       /* ✅ max 2 lines */
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .lecturer:hover img {
@@ -93,6 +108,7 @@ header p {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 12px;
 }
 
 .lecturer.active img {
@@ -124,8 +140,8 @@ main {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .card {
@@ -134,7 +150,9 @@ main {
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: opacity 0.35s ease, transform 0.35s ease;
+    transition: 
+    opacity 0.35s ease, 
+    transform 0.35s ease;
     padding: 0.9rem;
 }
 
@@ -146,12 +164,6 @@ main {
 .card p {
     margin: 0.4rem 0;
     font-size: 0.95rem;
-}
-
-.card {
-    transition:
-    opacity 0.35s ease,
-    transform 0.35s ease;
 }
 
 .card.fade-in {
@@ -234,15 +246,23 @@ footer {
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+
 /* Desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .card-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
