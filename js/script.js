@@ -97,20 +97,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Lecturer list
     const lecturers = [
-        "Dr Mohd Nurul Hafiz Bin Ibrahim",
-        "Noor Atikah binti Mat Abir",
-        "Dr. Kazem Chamran",
-        "Dr. Inam Ullah",
-        "Dr Hazirah Bee",
-        "Dr. Nwosu Anthony Ugochukwu",
-        "Dr Taqiyah Khadijah",
-        "Mohd Noor Hafizee bin Yahaya",
-        "Nur Athirah Saharil",
-        "Nur Fadhilah Binti Ahmad Ismail",
-        "Nazmirul Izzad bin Nassir",
-        "Aqilah Abd. Ghani",
-        "Nurul Amirah Binti Jauhari",
-        "Safia Adrina binti Mohd Zulkifli"
+        "ASSOC. PROF. DR. MOHD NURUL HAFIZ BIN IBRAHIM",
+        "NOOR ATIKAH BINTI MAT ABIR",
+        "DR KHAIROL AMIN BIN MOHD SALLEH",
+        "DR MOHAMMAD KAZEM CHAMRAN",
+        "DR. HAZIRAH BEE BINTI YUSOF ALI",
+        "DR. INAM ULLAH",
+        "DR. NWOSU ANTHONY UGOCHUKWU",
+        "DR. TAQIYAH KHADIJAH BINTI GHAZALI",
+        "MOHD NOOR HAFIZEE BIN YAHAYA",
+        "MUHAMMAD ARIF AIMAN BIN KHAIRUL NIZA",
+        "NAZMIRUL IZZAD BIN NASSIR",
+        "NUR ATHIRAH BINTI SAHARIL",
+        "NUR BATRISYIA DAMIA BINTI MUSTAFA",
+        "NUR FADHILAH BINTI AHMAD ISMAIL",
+        "NURUL AMIRAH BINTI JAUHARI",
+        "SAFIA ADRINA BINTI MOHD ZULKFLI",
+        "SYAHIRAH BINTI ISMAIL",
+        "JIBRIL MOHAMED"
     ];
 
     const lecturerContainer = document.getElementById("lecturerList");
